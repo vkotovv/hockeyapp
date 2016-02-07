@@ -515,4 +515,4 @@ class AppList(Applications):
         super(AppList, self).__init__(token)
 
     def execute(self):
-        self.list()
+        return self.list()

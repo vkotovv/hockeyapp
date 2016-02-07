@@ -58,7 +58,7 @@ def parse_args():
     la = subparsers.add_parser('list-applications',
                                help='List the applications available')
     la.set_defaults(func=lambda a:
-                    show(apps.AppList(a.api_key)))
+                    show(app.AppList(a.api_key)))
 
     lu = subparsers.add_parser('list-users',
                                help='List users associated with the '
